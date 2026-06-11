@@ -32,7 +32,7 @@ const _providers = [
     models: [
       { id: 'gemini-2.5-flash', name: 'Gemini 2.5 Flash', description: 'Enhanced flash model with better performance', isDefault: true,  active: true,  supportsThinkingMode: true  },
       { id: 'gemini-2.5-pro',   name: 'Gemini 2.5 Pro',   description: 'Most capable model for complex tasks',         isDefault: false, active: true,  supportsThinkingMode: true  },
-      { id: 'gemini-2.0-flash', name: 'Gemini 2.0 Flash', description: 'Fast, efficient model for most tasks',         isDefault: false, active: true,  outputs: ['image'] },
+      { id: 'gemini-2.0-flash', name: 'Gemini 2.0 Flash', description: 'Fast, efficient model for most tasks',         isDefault: false, active: true,  outputs: ['image'], imageInput: true },
       { id: 'gemma-3',          name: 'Gemma 3',           description: 'Open source model for basic tasks',           isDefault: false, active: true  },
     ],
   },
@@ -100,6 +100,7 @@ const _providers = [
     getKeyUrl: 'https://enter.pollinations.ai',
     models: [
       { id: 'flux',   name: 'Flux Schnell',  description: 'Fast Black Forest Labs Flux model', isDefault: true,  active: true, outputs: ['image'] },
+      { id: 'klein',  name: 'FLUX.2 Klein 4B', description: 'Distilled Black Forest Labs FLUX.2 model for fast image generation & editing', isDefault: false, active: true, outputs: ['image'], imageInput: true },
       { id: 'zimage', name: 'Z-Image Turbo', description: 'Alibaba Z-Image Turbo',             isDefault: false, active: true, outputs: ['image'] },
     ],
   },
